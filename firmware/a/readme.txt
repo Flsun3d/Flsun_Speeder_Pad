@@ -1,0 +1,2 @@
+Flash this firmware by copying "firmware.bin" and "STM32F4_UPDATE" floder to a SD card and turning on the printer with the card inserted. The firmware
+ filename must changed to "firmware.bin". it will automatically identify F103 and F401 chips

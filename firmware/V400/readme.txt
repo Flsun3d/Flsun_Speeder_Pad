@@ -1,0 +1,1 @@
+Flash this firmware by copying "Robin_nano35.bin"  to a SD card and turning on the printer with the card inserted. 
