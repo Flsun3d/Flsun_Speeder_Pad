@@ -44,4 +44,7 @@ moonraker: https://github.com/Flsun3d/moonraker_fs
   
   k)Turn Speeder Pad back on, it should start normally and arrive on KlipperScreen Splash Screen.
   
+```
+  user: pi
+  password: flsun
  
