@@ -23,3 +23,4 @@ a)Download this restoration imager：
 b)Download and install Raspberry Pi imager here：https://www.raspberrypi.com/software/
 
 c)Insert the TF card into the PC and double-click to open the imager：
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/1.png)
