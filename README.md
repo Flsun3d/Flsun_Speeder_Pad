@@ -4,7 +4,7 @@ mainsail: https://github.com/Flsun3d/mainsail_fs
 
 moonraker: https://github.com/Flsun3d/moonraker_fs
 
-==**Flash Speeder Pad Imager**==
+# Flash Speeder Pad Imager
 
 **1.Note**: Flashing the imager will reset all configurations and lose all data on your pad, so this operation is only used to restore the original settings of the Speeder Pad
 
