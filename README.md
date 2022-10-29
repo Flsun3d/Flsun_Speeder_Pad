@@ -210,11 +210,13 @@ flsun
 1.Since the initial password of the PAD is the same,if you use it for the first time,it is recommended that you change the password.
 
 2.Enter the following command in the SSH command prompt window: 
-sudo passwd pi
-
+```
+  sudo passwd pi
+```
 3.The system will ask you to enter the current password for verification, please enter: 
-flsun
-
+```
+  flsun
+```
 4.Verification is complete, you can enter a new password and press Enter to confirm.
 
 5.NOTE: When entering the password, for the security of the password, you will not be able to see any characters in the window. Please ignore it. Just enter the password and click Enter.
@@ -327,8 +329,10 @@ flsun
 1.We provide compiled firmware, but because there are many types of printers and motherboards, if your printer is not in the preset configuration, you can try to configure the firmware yourself to make Speeder Pad connect to your printer.
 
 2.In the SSH command prompt window, enter the following commands (input one at a time):
-cd ~/klipper/
-make menuconfig
+```
+  cd ~/klipper/
+  make menuconfig
+```
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/74.png)
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/75.png)
 
@@ -412,7 +416,9 @@ make menuconfig
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/98.png)
 
 30.Start compiling the firmware by entering the following commands:
-make
+```
+  make
+```
 
 31.Find the location where the firmware is stored.
 
@@ -423,7 +429,9 @@ make
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/100.png)
 
 34.Start compiling the firmware by entering the following commands:
-./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano.bin
+```
+  ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano.bin
+```
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/101.png)
 
 35.Prepare a TF card and insert it into the computer.
@@ -455,8 +463,10 @@ make
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/107.png)
 
 46.In the SSH command prompt window, enter the following commands (input one at a time):
-cd ~/klipper/
-make menuconfig
+```
+  cd ~/klipper/
+  make menuconfig
+```
 
 47.The following steps can refer to the content of steps 3-26 in this part of the tutorial.
 
@@ -473,16 +483,22 @@ make
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/110.png)
 
 51.Enter the following command to start getting serial port information:
-ls /dev/serial/by-id/*
+```
+  ls /dev/serial/by-id/*
+```
 
 52.It should report something like:
-/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+```
+  /dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+```
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/111.png)
 
 53.For common microcontrollers, the firmware can be flashed using something like the following (input one at a time):
-service klipper-1 stop
-make flash FLASH_DEVICE=/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
-service klipper start
+```
+  service klipper-1 stop
+  make flash FLASH_DEVICE=/dev/serial/by-id/usb-1a86_USB_Serial-if00-port0
+  service klipper start
+```
 
 54.Be sure to update the FLASH_DEVICE parameter with the printer's unique serial port name.
 
