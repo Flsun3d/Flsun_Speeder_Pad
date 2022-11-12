@@ -4,6 +4,10 @@ mainsail: https://github.com/Flsun3d/mainsail_fs
 
 moonraker: https://github.com/Flsun3d/moonraker_fs
 
+1. If  the SpeederPad does not work properly during the process of upgrading or modifying it, you can try to use the method in this tutorial to re-flash the image .
+2. If you need to make some upgrades and your own modifications to the PAD, we strongly recommend making modifications in our published image system to ensure compatibility in later versions.
+3. For the security of your system, it is recommended that you change the password in time after downloading and flashing the image. If you do not need to modify the system, it is recommended that you close the SSH service. Enter "sudo systemctl disable ssh" in SSH and restart it to take effect.
+
 ## Table of Tutorial
 
 - [Flash Speeder Pad Imager](#flash-speeder-pad-imager)
