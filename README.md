@@ -332,7 +332,7 @@ flsun
 
 ## Adxl345 usage tutorial
 
-1. The adxl345 is fixed on the effector module or the heat bed.And the adxl345 is inserted into the port 3 from bottom to top on the right side, which is the "port3" port.
+1. The adxl345 is fixed on the effector module or the hotbed.And the adxl345 is inserted into the port 3 from bottom to top on the right side, which is the "port3" port.
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/113.png)
 
 2. Open the printer.cfg file on the web page, search for “#[include adxl345.cfg]” and change it to “[include adxl345.cfg]”, click save and restart.
