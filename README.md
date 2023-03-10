@@ -330,7 +330,7 @@ flsun
 7.Right-click the file and click Download.
 ![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/73.png)
 
-## How to use Timelapse
+## Adxl345 usage tutorial
 
 1. The adxl345 is fixed on the effector module or the heat bed.And the adxl345 is inserted into the port 3 from bottom to top on the right side, which is the "port3" port.
 
