@@ -333,24 +333,37 @@ flsun
 ## Adxl345 usage tutorial
 
 1. The adxl345 is fixed on the effector module or the heat bed.And the adxl345 is inserted into the port 3 from bottom to top on the right side, which is the "port3" port.
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/113.png)
 
 2. Open the printer.cfg file on the web page, search for “#[include adxl345.cfg]” and change it to “[include adxl345.cfg]”, click save and restart.
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/114.png)
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/115.png)
 
 3. For Delta printers, click "Configuration>Input shaper>Finding ADXL>Measure Both" and wait for the measurement. After the measurement, it will restart and return to the main interface.
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/116.png)
 
 4. For the I3 printer, fix the Adxl345 on the effector module, click "Configuration>Input shaper>Finding ADXL>Measure X" and wait for the measurement. After the measurement is completed, it will restart and return to the main interface. Fix the Adxl345 on the hot bed, click "Configuration>Input shaper>Finding ADXL>Measure Y" again, and wait for the measurement. After the measurement is completed, it will restart and return to the main interface.
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/117.png)
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/118.png)
 
 5. After unplugging the adxl345 sensor, the printer cannot be connected. Open the printer.cfg file on the web page and search for “[include adxl345.cfg]” and change it to “#[include adxl345.cfg]”, click Save and restart.
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/119.png)
 
 6. If the adxl345 sensor needs to be inserted into the second port from bottom to top on the right side, which is the "port2" port, you need to open the adxl345.cfg file on the web page to find "usb-0:1.2:1.0" and change it to "usb-0:1.3:1.0" ", click Save and Restart.
- 
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/120.png)
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/121.png)
+
 7. The output detection data is saved in the tmp directory of SpeederPAD, and can be viewed after logging in through ssh. For detailed tutorials, please view: https://www.klipper3d.org/zh/Measuring_Resonances.html
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/122.png)
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/123.png)
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/124.png)
 
 8. Enter the following command after ssh login to convert the output csv file into a picture format chart. (If there are previously detected csv data in the tmp directory, please delete and ensure that there are only two csv files with xy data and then execute these two commands)
 Enter one line at a time, and press the Enter key once after entering a line:
 ~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_x_*.csv -o /tmp/shaper_calibrate_x.png
 ~/klipper/scripts/calibrate_shaper.py /tmp/calibration_data_y_*.csv -o /tmp/shaper_calibrate_y.png
 If the PNG image does not appear, click the refresh button.
+![image](https://github.com/Flsun3d/Flsun_Speed_Pad/blob/main/image/125.png)
 
 9. You can go to the official website https://flsun3d.com/ and github https://github.com/Flsun3d/Flsun_Speeder_Pad Find the image of the printer V1.2, and find the electronic tutorial and video tutorial on github.
 
